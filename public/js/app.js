@@ -20,7 +20,9 @@ weatherForm.addEventListener("submit", (e) => {
         messageOne.textContent = data.location;
         messageTwo.textContent = `${data.weather_descriptions.join(
           ", "
-        )}. It is ${data.temperature} and feels like ${data.feelslike}.`;
+        )}. It is ${data.temperature}°C out and feels like ${
+          data.feelslike
+        }°C. Humidity: ${data.humidity}.`;
       }
     });
   });
